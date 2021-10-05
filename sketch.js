@@ -385,7 +385,7 @@ function play(){
 
 
 
-	if(xp % 51 == 0){
+	if(xp == 51){
 		level = 2;
 	}
 
@@ -434,12 +434,12 @@ function play(){
 		
 		if(zombieHealth_ == 0){
 			zombie_Group.destroyEach();
-			xp += 5;
+			xp += 15;
 			zombieHealth_ = 100;
 		}
 		  if(enemyHealth_ == 0){
 			enemy_Group.destroyEach();
-			xp += 10;
+			xp += 25;
 			enemyHealth_ = 100;
 		}
 		console.log(enemyHealth_);
